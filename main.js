@@ -16,8 +16,9 @@ function get_numbers(){
 
 
 function somar(a, b){
-    var DECIMALS = 10
-    return parseInt(a, DECIMALS) + parseInt(b, DECIMALS)
+    
+    // return parseInt(a, DECIMALS) + parseInt(b, DECIMALS)
+    return Number(a) + Number(b)
 
 }
 
@@ -46,10 +47,12 @@ function exit(){
         switch(input){
             case "y":
                 loop = false
+                console.log("Obrigado Por usar a Calculadora")
                 break
                 
             case "Y":
                 loop = false
+                console.log("Obrigado Por usar a Calculadora")
 
             case "n":
                 break
@@ -57,7 +60,7 @@ function exit(){
             case "N":
                 break
             }
-        console.log("Obrigado Por usar a Calculadora")
+        
         }
     else{
         console.log("\ncampo vazio tente novamente\n")
@@ -86,7 +89,7 @@ function verify_operator(){
             case "":
                 console.log("error")
         }
-        console.log("\nresultado é igual a "+ resultado)
+        console.log(`\nresultado é igual a ${resultado}`)
     }
     else{
 
